@@ -1,0 +1,92 @@
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  &__name {
+    width: 10rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 9rem;
+    }
+
+    span {
+      font-size: 1.8rem;
+      padding: 0.5rem 1rem;
+
+      @media only screen and (max-width: $bp-small) {
+        padding: 0.2rem 0.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__bar-empty {
+    width: 80%;
+    height: 1.5rem;
+    background-color: #cccccc80;
+    border-radius: 5rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 1rem;
+    }
+  }
+
+  &__bar-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    background-color: $color-secondary;
+    border-radius: 5rem;
+
+    &.html.load,
+    &.css.load {
+      width: 95%;
+    }
+
+    &.sass.load,
+    &.figma.load {
+      width: 90%;
+    }
+
+    &.javascript.load {
+      width: 85%;
+    }
+
+    &.react.load,
+    &.firebase.load,
+    &.git.load {
+      width: 80%;
+    }
+
+    &.typescript.load {
+      width: 70%;
+    }
+
+    &.node-js.load,
+    &.express.load {
+      width: 60%;
+    }
+
+    &.mongodb.load {
+      width: 50%;
+    }
+  }
+
+  &__percentage {
+    opacity: 0;
+    color: #fff;
+    font-size: 2.2rem;
+    transition: all 2s;
+  }
+}
+
+.load {
+  animation: loading 1s linear;
+}

@@ -1,0 +1,103 @@
+.header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+
+  // Back ground change animation
+  animation: slideBg 15s linear infinite 0s;
+  animation-timing-function: cubic-bezier(1, 0, 0.3, 1);
+  background-image: url(../img/images/slide-1.webp);
+  background-attachment: fixed;
+
+  &__dark-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(
+      124deg,
+      #ff220055,
+      #e81d1d55,
+      #e8b71d55,
+      #e3e81d55,
+      #1de84055,
+      #1ddde855,
+      #2b1de855,
+      #dd00f255,
+      #dd00f255
+    );
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 4.5rem;
+    left: 4.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 3.5rem;
+      left: 3.5rem;
+    }
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    min-width: 65rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      min-width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 55%;
+    }
+
+    @media only screen and (orientation: landscape) and (max-width: $bp-medium) {
+      top: 60%;
+    }
+
+    & .heading-primary--main {
+      animation: slideFromLeft 1.5s ease-out;
+    }
+
+    & .heading-primary--sub {
+      animation: slideFromRight 1.5s ease-out;
+    }
+  }
+
+  &__btns-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+
+    & > * {
+      margin: 0 2rem;
+
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@keyframes slideBg {
+  0% {
+    background-image: url(../img/images/slide-1.webp);
+  }
+  33% {
+    background-image: url(../img/images/slide-2.webp);
+  }
+  66% {
+    background-image: url(../img/images/slide-3.webp);
+  }
+  100% {
+    background-image: url(../img/images/slide-1.webp);
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  30% {
+    width: 15%;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
