@@ -109,6 +109,9 @@ body {
   @media only screen and (orientation: landscape) and (max-width: 50em) {
     .heading-primary {
       margin-bottom: 4rem; } }
+  .heading-primary > * {
+    background-color: #6d4e0c7a;
+    border-radius: 15px; }
   .heading-primary--main {
     color: #fff;
     display: block;
@@ -576,7 +579,6 @@ body {
     height: 10rem; }
   .header__text-box {
     position: absolute;
-    min-width: 65rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -637,6 +639,12 @@ body {
   background-image: radial-gradient(#4d3ab9, #2c276e);
   z-index: 1000;
   transition: all 0.3s; }
+  @media only screen and (max-width: 75em) {
+    .navigation__background {
+      width: 45vw; } }
+  @media only screen and (max-width: 50em) {
+    .navigation__background {
+      width: 60vw; } }
 
 .navigation__nav {
   height: 100vh;
@@ -681,14 +689,20 @@ body {
   transform: translateX(0); }
   @media only screen and (max-width: 37.5em) {
     .navigation__checkbox:checked ~ .navigation__background {
-      width: 50vw; } }
+      width: 70vw; } }
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 35vw; }
+  @media only screen and (max-width: 75em) {
+    .navigation__checkbox:checked ~ .navigation__nav {
+      width: 45vw; } }
+  @media only screen and (max-width: 50em) {
+    .navigation__checkbox:checked ~ .navigation__nav {
+      width: 60vw; } }
   @media only screen and (max-width: 37.5em) {
     .navigation__checkbox:checked ~ .navigation__nav {
-      width: 50vw; } }
+      width: 70vw; } }
 
 .navigation__icon {
   position: relative;

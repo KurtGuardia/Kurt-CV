@@ -19,6 +19,11 @@ body {
     margin-bottom: 4rem;
   }
 
+  & > * {
+    background-color: #6d4e0c7a;
+    border-radius: 15px;
+  }
+
   &--main {
     color: #fff;
     display: block;

@@ -32,6 +32,14 @@
     background-image: radial-gradient($color-primary-light, $color-primary);
     z-index: 1000;
     transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-largest) {
+      width: 45vw;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 60vw;
+    }
   }
 
   &__nav {
@@ -89,7 +97,7 @@
     transform: translateX(0);
 
     @media only screen and (max-width: $bp-small) {
-      width: 50vw;
+      width: 70vw;
     }
   }
 
@@ -97,8 +105,16 @@
     opacity: 1;
     width: 35vw;
 
+    @media only screen and (max-width: $bp-largest) {
+      width: 45vw;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 60vw;
+    }
+
     @media only screen and (max-width: $bp-small) {
-      width: 50vw;
+      width: 70vw;
     }
   }
 

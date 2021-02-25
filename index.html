@@ -862,6 +862,17 @@
         }
       });
     </script> -->
+    <script>
+      //For automatic Navigation close after selecting a section
+      const ham = document.querySelector('.navigation__checkbox');
+      const links = document.querySelectorAll('.navigation__link');
+
+      links.forEach((link) => {
+        link.addEventListener('click', () => {
+          ham.checked = false;
+        });
+      });
+    </script>
     <script defer src="./js/script.js"></script>
   </body>
 </html>
