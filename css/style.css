@@ -552,11 +552,18 @@ body {
     width: 100%;
     height: 100vh;
     background: linear-gradient(124deg, #ff220055, #e81d1d55, #e8b71d55, #e3e81d55, #1de84055, #1ddde855, #2b1de855, #dd00f255, #dd00f255);
-    background-size: 1800% 1800%;
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite; }
+    background-size: 1000% 500%;
+    -webkit-animation: rainbow 10s linear infinite;
+    -z-animation: rainbow 10s linear infinite;
+    -o-animation: rainbow 10s linear infinite;
+    animation: rainbow 10s linear infinite; }
+    @media only screen and (max-width: 50em) {
+      .header__dark-filter {
+        background-size: 2000% 500%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__dark-filter {
+        background-size: 3000% 500%;
+        animation-duration: 7s; } }
   .header__logo-box {
     position: absolute;
     top: 4.5rem;

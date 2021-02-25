@@ -31,12 +31,20 @@
       #dd00f255,
       #dd00f255
     );
-    background-size: 1800% 1800%;
+    background-size: 1000% 500%;
+    -webkit-animation: rainbow 10s linear infinite;
+    -z-animation: rainbow 10s linear infinite;
+    -o-animation: rainbow 10s linear infinite;
+    animation: rainbow 10s linear infinite;
 
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
+    @media only screen and (max-width: $bp-medium) {
+      background-size: 2000% 500%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      background-size: 3000% 500%;
+      animation-duration: 7s;
+    }
   }
 
   &__logo-box {
