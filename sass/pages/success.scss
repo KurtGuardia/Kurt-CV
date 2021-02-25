@@ -1,0 +1,76 @@
+.success {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  height: 50vh;
+  justify-content: space-between;
+  margin: 20vh auto;
+  background-color: $color-primary;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 35rem;
+  }
+
+  & .logo-box {
+    width: 20rem;
+    height: auto;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 15rem;
+    }
+
+    & img {
+      opacity: 0.6;
+      transition: all 0.3s;
+      width: 100%;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  & h1 {
+    font-size: 540%;
+    color: #feb21f;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 400%;
+      line-height: 1.2;
+    }
+  }
+
+  & h2 {
+    font-size: 270%;
+    color: #fff;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 200%;
+    }
+  }
+
+  & .btn {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    color: #feb21f;
+    padding: 0.5rem 1rem;
+    border: 2px solid #feb21f;
+    border-radius: 100px;
+    transition: all 0.2s;
+    outline: none;
+    text-decoration: none;
+    width: fit-content;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 15px;
+    }
+
+    &:hover {
+      background-color: #feb21f;
+      color: #333;
+    }
+  }
+}
