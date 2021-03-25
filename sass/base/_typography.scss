@@ -77,6 +77,12 @@ body {
   font-weight: 400;
   position: relative;
 
+  &:hover {
+    &::after {
+      width: 15rem;
+    }
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -87,6 +93,7 @@ body {
     height: 3px;
     background-color: $color-primary;
     display: inline-block;
+    transition: all 0.3s;
   }
 
   &--yellow {

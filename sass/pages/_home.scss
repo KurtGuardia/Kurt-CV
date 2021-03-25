@@ -98,8 +98,8 @@
   padding: 6rem 0;
 
   &__filter {
-    width: 60%;
-    max-width: 75rem;
+    width: 70%;
+    max-width: 80rem;
     margin: 0 auto 6rem auto;
     display: flex;
     align-items: center;
@@ -115,7 +115,10 @@
     }
 
     @media only screen and (max-width: $bp-smallest) {
-      width: 98%;
+      width: 60%;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 0;
     }
   }
 
@@ -140,6 +143,9 @@
     @media only screen and (max-width: $bp-smallest) {
       width: 8.5rem;
       font-size: 1.7rem;
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
     }
   }
 
