@@ -80,3 +80,8 @@ filterBtns.forEach((btn) => {
 //   console.log('key: work');
 //   console.log('hint: js - forfun');
 // });
+
+//current year
+const yearEl = document.getElementById('year');
+const curYear = new Date().getFullYear();
+yearEl.textContent = curYear;
