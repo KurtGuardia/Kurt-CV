@@ -4,8 +4,10 @@ const skillsOffset =
 
 window.addEventListener('scroll', () => {
   let y = document.documentElement.scrollTop
+  console.log(y + 400)
 
   if (y + 400 > skillsOffset) {
+    console.log('IN')
     const skills = document.querySelectorAll(
       '.skill__bar-fill',
     )
@@ -20,6 +22,7 @@ window.addEventListener('scroll', () => {
   }
 
   if (y + 500 < skillsOffset) {
+    console.log('OUT')
     const skills = document.querySelectorAll(
       '.skill__bar-fill',
     )

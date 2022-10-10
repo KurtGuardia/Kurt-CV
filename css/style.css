@@ -451,7 +451,7 @@ body {
       width: 70%; }
     .skill__bar-fill.node-js.load, .skill__bar-fill.express.load {
       width: 60%; }
-    .skill__bar-fill.mongodb.load {
+    .skill__bar-fill.mongodb.load, .skill__bar-fill.vue.load {
       width: 50%; }
   .skill__percentage {
     opacity: 0;
