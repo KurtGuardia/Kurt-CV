@@ -74,7 +74,8 @@
       width: 60%;
     }
 
-    &.mongodb.load {
+    &.mongodb.load,
+    &.vue.load {
       width: 50%;
     }
   }
